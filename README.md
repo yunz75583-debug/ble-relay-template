@@ -38,28 +38,25 @@
 
 ## 第一步：部署到 Railway
 
-1. **Fork 本仓库**
-   - 点击右上角「Fork」，复制到你的 GitHub 账号
+点击下面的按钮一键部署：
 
-2. **登录 Railway**
-   - 打开 railway.app，用 GitHub 账号登录
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/ak5nLs?referralCode=UyFE4c&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
-3. **部署项目**
-   - 点击「New Project」→「Deploy from GitHub repo」
-   - 选择你 Fork 的仓库
-   - 点击「Deploy」，等待完成（约 1-2 分钟）
+1. 点击按钮，跳转到 Railway
+2. 用 GitHub 账号登录
+3. 点击「Deploy」，等待完成（约 1-2 分钟）
+4. 部署完成后，点击「Variables」标签
+5. 添加环境变量：
+   - Key: `BRIDGE_SECRET`
+   - Value: 你自己设的密码（比如 `abc123`）
+6. 点击「Add」保存
+7. 点击「Settings」→「Networking」，复制公网地址（如 `https://xxx.up.railway.app`）
 
-4. **设置密码**
-   - 点击「Variables」标签
-   - 添加变量：
-     - Key: `BRIDGE_SECRET`
-     - Value: 你自己设的密码（比如 `abc123`）
-   - 点击「Add」
-
-5. **获取公网地址**
-   - 点击「Settings」→「Networking」
-   - 复制公网地址，格式如：`https://xxx.up.railway.app`
-
+1. 点击按钮，跳转到 Railway
+2. 用 GitHub 账号登录
+3. 点击「Deploy」，等待完成
+4. 在「Variables」中设置 `BRIDGE_SECRET`
+5. 在「Settings」→「Networking」获取公网地址
 
 ## 第二步：生成中继页面
 
